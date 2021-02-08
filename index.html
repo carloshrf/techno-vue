@@ -43,7 +43,7 @@
           <span class="modal_price">{{product.preco | priceNumber}}</span>
           <h2 class="modal-title">{{product.nome}}</h2>
           <p>{{product.descricao}}</p>
-          <button class="modal-btn" v-if="product.estoque > 0" @click="addCartItem">{{product.estoque}}</button>
+          <button class="modal-btn" v-if="product.estoque > 0" @click="addCartItem">Buy</button>
           <button class="modal-btn sold" disabled v-else>Produto esgotado</button>
         </div>
         <div class="reviews">
